@@ -1,3 +1,4 @@
 import streamlit
 
-streamlit.write("My First App")
+streamlit.title("การจำแนกข้อมูลด้วยเทคนิค Machine Learning")
+streamlit.image("public/images/me.jpeg")
