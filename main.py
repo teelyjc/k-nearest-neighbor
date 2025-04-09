@@ -20,10 +20,10 @@ with col3:
   streamlit.header("Setosa")
   streamlit.image("public/images/iris3.jpg")
 
-streamlit.html("""
+streamlit.markdown("""
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
   <center>
     <h5>ข้อมูล iris หรือข้อมูลดอกไม้สำหรับทำนาย</h5>
   </center>
 </div>
-""")
+""", unsafe_allow_html=True)
