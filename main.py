@@ -1,6 +1,6 @@
 import streamlit
 
-import pandas as pds
+import pandas as pd
 import numpy as np
 
 streamlit.title("การจำแนกข้อมูลด้วยเทคนิค Machine Learning")
@@ -21,9 +21,18 @@ with col3:
   streamlit.image("public/images/iris3.jpg")
 
 streamlit.markdown("""
-<div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-  <center>
-    <h5>ข้อมูล iris หรือข้อมูลดอกไม้สำหรับทำนาย</h5>
-  </center>
-</div>
-""", unsafe_allow_html=True)
+  <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+    <center>
+      <h5>ข้อมูล iris หรือข้อมูลดอกไม้สำหรับทำนาย</h5>
+    </center>
+  </div>
+""",
+unsafe_allow_html=True)
+
+
+dt = pd.read_csv("public/data/iris-3.csv")
+
+streamlit.subheader("ข้อมูลส่วนแรก 10 แถว")
+streamlit.write(dt.head(10))
+streamlit.subheader("ข้อมูลส่วนสุดท้าย 10 แถว")
+streamlit.write(dt.tail(10))
