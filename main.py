@@ -3,8 +3,6 @@ import streamlit
 import pandas as pds
 import numpy as np
 
-from matplotlib import pyplot as plt
-
 streamlit.title("การจำแนกข้อมูลด้วยเทคนิค Machine Learning")
 streamlit.image("public/images/me.jpeg")
 
